@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="actionBarSize">48dip</item>
+        <item name="android:actionBarSize">40dip</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="colorPrimary">#FF6600</item>
+        <item name="android:actionMenuTextColor">#fff</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:itemBackground">#cc2020</item>
+        <item name="actionBarTabTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:actionMenuTextAppearance">@style/MyActionBar.MenuTextStyle</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="colorPrimaryDark">@color/statusbar_clr</item>
+        <item name="android:dropDownListViewStyle">@style/SpinnerStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#0fbee6</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:divider">#949292</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:listSelector">#fddb74</item>
+        <item name="android:background">#aeacac</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="drawerMenuStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+    <style name="MyActionBar.MenuTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="RadioButton.Login" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="buttonTint">@android:color/white</item>
+    </style>
+</resources>

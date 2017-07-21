@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radioButton1"
+                style="@style/RadioButton.Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:clickable="false"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radioButton2"
+                style="@style/RadioButton.Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radioButton3"
+                style="@style/RadioButton.Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radioButton4"
+                style="@style/RadioButton.Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radioButton5"
+                style="@style/RadioButton.Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_tab_layout_height"
+        android:background="@color/white"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/actionbar_clr"
+        app:tabMode="fixed" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>
